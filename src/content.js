@@ -1,14 +1,15 @@
-import AmazonImg from "../public/images/amazon.png"
-import NetflixImg from "../public/images/netflix.png"
-import SpotifyImg from "../public/images/spotify.png"
-import DeveloperSvg from "../public/developer.svg"
+
 import {SiDesignernews} from "react-icons/si"
 import {FaDatabase} from "react-icons/fa"
 import {FiMonitor, FiFigma} from "react-icons/fi"
 import {CgWebsite} from "react-icons/cg"
 import {AiOutlineMobile} from "react-icons/ai"
 
-import AirbnbImg from "../public/images/airbnb.png"
+import AmazonImg from "../public/images/amazon.png"
+import NetflixImg from "../public/images/netflix.png"
+import SpotifyImg from "../public/images/spotify.png"
+import DeveloperSvg from "../public/developer.svg"
+import AirbnbImg from "../public/images/Airbnb.png"
 
 
 export const title= "Portfolio"
