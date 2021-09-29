@@ -6,7 +6,7 @@ import {projects} from "../src/content"
 
 function Project() {
     return (
-        <div id="project" className="mt-10 ">
+        <div id="project" className="pt-14 ">
            <h1 className="mb-4 text-4xl font-semibold text-medium">{projects.title}</h1>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {

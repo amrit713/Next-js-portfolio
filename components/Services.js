@@ -5,7 +5,7 @@ import {services} from "../src/content"
 
 function Services() {
     return (
-        <div id="service" className="my-10">
+        <div id="service" className="py-14">
             
             <h1 className="mb-4 text-4xl font-semibold text-medium">Services</h1>
 

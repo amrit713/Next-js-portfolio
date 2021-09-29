@@ -5,7 +5,7 @@ import {AiOutlineArrowRight} from "react-icons/ai"
 
 function About() {
     return (
-        <div id="about"  className="p-6 mt-10 bg-light lg:px-16">
+        <div id="about"  className="p-6 pt-14 bg-light lg:px-16">
             <h1 className="flex justify-end font-medium text-dark">{aboutContent.title}</h1>
             <div className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-4 sm:grid-cols-2 ">
 

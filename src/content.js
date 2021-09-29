@@ -17,24 +17,24 @@ export const title= "Portfolio"
 export const headerTitle=[
     {
         title:"Home", 
-        label :"home"
+        label :"#home"
     },
     
     {
         title:"About", 
-        label :"about"
+        label :"#about"
     },
     {
         title:"Project", 
-        label :"project"
+        label :"#project"
     },
     {
         title:"Services", 
-        label :"service"
+        label :"#service"
     },
     {
         title:"Contact", 
-        label :"contact"
+        label :"#contact"
     },
 
    
@@ -50,7 +50,7 @@ export const homePart ={
     Next js and TailwindCSS . Some backend knowledge 
     of FastAPI and Django`,
 
-    btnTitle:"HIRE ME"
+    btnTitle:"RESUME"
 }
 
 export const projects = {

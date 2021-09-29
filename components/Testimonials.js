@@ -7,16 +7,16 @@ import {testimonials} from "../src/content"
 
 function Testimonials() {
     return (
-        <div className="px-6 py-6 mt-1 bg-light lg:px-16">
+        <div className="px-6 py-6 bg-light lg:px-16">
             
             <Carousel
-            autoPlay={true}
+            
             showArrows={false}
             showStatus={false}
             showThumbs={false}
             swipeable={true}
-            interval={6000}
-            infiniteLoop={true}
+            
+            
             >
             {
               testimonials.map(testimonial=>(

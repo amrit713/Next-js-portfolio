@@ -2,9 +2,13 @@ import React from 'react'
 import {homePart} from "../src/content"
 import Image from "next/image"
 
+
+
 function Home() {
+
+   
     return (
-        <div id="home" className="grid grid-cols-2 gap-4 mt-10">
+        <div id="home" className="grid grid-cols-2 gap-4 pt-14">
             {/* left side */}
             <div className="col-span-2 sm:col-span-1">
             
@@ -13,7 +17,10 @@ function Home() {
                 <h1 className="text-7xl">{homePart.LastName}</h1>
                 <p className="w-full ">{homePart.description}</p>
             </div>
-            <button className="p-2 px-6 transition duration-500 ease-out bg-medium text-light hover:bg-dark active:scale-110">{homePart.btnTitle}</button>
+            <a download href="./resumeforreact.pdf"
+             className="p-2 px-6 transition duration-500 ease-out bg-medium text-light hover:bg-dark active:scale-110">
+                {homePart.btnTitle}</a>
+            
             </div>
 
             {/* right side */}

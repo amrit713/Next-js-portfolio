@@ -8,6 +8,7 @@ import Project from "../components/Project"
 import Services from "../components/Services"
 import Testimonials from "../components/Testimonials"
 import Contact from "../components/Contact"
+import BottomHeader from "../components/BottomHeader"
 
 function index() {
   return (
@@ -17,8 +18,9 @@ function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      
       <main >
-        
+      
     <div className="px-6 lg:px-16">
     <Home/>
     </div>
@@ -36,6 +38,10 @@ function index() {
         <Contact />
         
       </div>
+      
+      <BottomHeader/>
+        
+    
 
       </main>
       

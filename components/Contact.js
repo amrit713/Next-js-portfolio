@@ -1,10 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Link from "next/link"
 import {AiFillGithub, AiOutlineInstagram, AiFillLinkedin} from "react-icons/ai"
 
 function Contact() {
+    const [name , setName]= useState()
+    const [email , setEmail] = useState()
+    const [projectDetail, setProjectDetail] = useState()
+    
+    const summit = (e)=>{
+        e.preventDefault()
+        alert("Summited")
+        setName(name)
+        setEmail(email)
+        setProjectDetail(projectDetail)
+
+        console.log(name)
+    }
+
+    
     return (
-        <div id="contact" className="grid grid-cols-1 gap-10 my-10 sm:grid-cols-2">
+        <div id="contact" className="grid grid-cols-1 gap-10 py-10 sm:grid-cols-2">
             {/* left */}
             <div className="flex flex-col space-y-4">
             <h1 className="text-2xl font-semibold text-medium"> Let's Connect</h1>
@@ -45,15 +60,20 @@ function Contact() {
             {/* right */}
             <div>
                 <p className="mb-10 text-lg font-medium text-medium">let's message me and make something together !</p>
-                <form action="">
+                <form action="" onSubmit={summit} >
                 <div className="flex flex-col w-full space-y-6">
-                <input className="px-3 py-2 rounded-md bg-light" type="text" placeholder="Your Name" />
-                <input className="px-3 py-2 rounded-md bg-light" type="text" placeholder="Your Email"  />
+                <input className="px-3 py-2 rounded-md bg-light" type="text" placeholder="Your Name" value={name}
+                onChange={()=>setName(name)} />
+                <input className="px-3 py-2 rounded-md bg-light" type="text" placeholder="Your Email" value={name}
+                onChange={()=>setEmail(email)} />
               
-                <textarea className="px-3 py-2 rounded-md bg-light" name="text" placeholder="project Detail" cols="3" rows="2"></textarea>
+                <textarea className="px-3 py-2 rounded-md bg-light" name="text" placeholder="project Detail" cols="3" rows="2"
+                value={name}
+                onChange={()=>setProjectDetail(projectDetail)}/>
                 </div>
                 
-                <button className="px-6 py-2 mt-6 text-white transition duration-500 ease-out bg-medium active:scale-110 hover:bg-dark">SEND</button>
+                <button className="px-6 py-2 mt-6 text-white transition duration-500 ease-out bg-medium active:scale-110 hover:bg-dark" 
+                >SEND</button>
                 
                     
                 </form>

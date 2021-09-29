@@ -34,16 +34,10 @@ function Header() {
             <div className="items-center flex-grow hidden space-x-1 justify-evenly sm:flex lg:px-10">
                 {
                     headerTitle.map((header)=>(
-                        <A
-                        activeClass="active"
-                        to={header.label}
-                        smooth={true}
-                        duration={500}
-                        key={header.label}
-                        >
-                            <p className="font-medium transition duration-200 ease-out cursor-pointer text-medium hover:text-dark active:scale-105">{header.title}</p>
+                       <a href={header.label}> <p className="font-medium transition duration-200 ease-out cursor-pointer text-medium hover:text-dark active:scale-105">{header.title}</p> </a>
                            
-                        </A>
+                           
+                        
                     ))
                 }
             </div>
@@ -72,6 +66,7 @@ function Header() {
 
                 
            </div>
+           
         </header>
     )
 }
