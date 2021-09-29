@@ -8,7 +8,7 @@ function Home() {
 
    
     return (
-        <div id="home" className="grid grid-cols-2 gap-4 pt-14">
+        <div id="home" className="grid grid-cols-2 gap-4 mb-10 pt-14">
             {/* left side */}
             <div className="col-span-2 sm:col-span-1">
             
